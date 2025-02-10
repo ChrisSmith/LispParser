@@ -1,0 +1,33 @@
+﻿{
+  Args: [
+    {
+      Identifier: first
+    },
+    {
+      Args: [
+        {
+          Identifier: list
+        },
+        {
+          Literal: 1
+        },
+        {
+          Args: [
+            {
+              Identifier: +
+            },
+            {
+              Literal: 2
+            },
+            {
+              Literal: 3
+            }
+          ]
+        },
+        {
+          Literal: 9
+        }
+      ]
+    }
+  ]
+}
