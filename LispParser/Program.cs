@@ -14,9 +14,13 @@ while (true)
     {
         if (input != null)
         {
+            var vm = new VirtualMachine();
             var tokens = lexer.Parse(input).ToList();
             var expression = parser.Parse(tokens);
             Console.WriteLine(expression);
+
+            var res = vm.Execute(expression);
+            Console.WriteLine(res);
         }
     }
     catch (ParseException e)
